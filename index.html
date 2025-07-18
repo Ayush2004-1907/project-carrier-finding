@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Career Path Advisor</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -11,14 +12,15 @@
   <div class="container">
     <div class="toggle-wrapper">
       <h1>Find Your Ideal Career</h1>
-      <button id="darkToggle">🌙 Toggle Dark Mode</button>
-      <a class="link-btn" href="chatbot.html">💬 Ask the Career Bot</a>
-
+      <div class="toggle-links">
+        <button id="darkToggle">🌙 Toggle Dark Mode</button>
+        <a class="link-btn" href="chatbot.html">💬 Career Chatbot</a>
+      </div>
     </div>
 
     <form id="career-form">
-      <label>1. Which area excites you the most?</label>
-      <select id="interest">
+      <label for="interest">1. Which area excites you the most?</label>
+      <select id="interest" required>
         <option value="">--Select--</option>
         <option value="tech">Technology</option>
         <option value="creative">Creative Arts</option>
@@ -27,8 +29,8 @@
         <option value="education">Education</option>
       </select>
 
-      <label>2. Which skill describes you best?</label>
-      <select id="skill">
+      <label for="skill">2. Which skill describes you best?</label>
+      <select id="skill" required>
         <option value="">--Select--</option>
         <option value="logic">Logical Thinking</option>
         <option value="design">Design/Creativity</option>
@@ -37,8 +39,8 @@
         <option value="teaching">Teaching/Explaining</option>
       </select>
 
-      <label>3. What type of work environment do you prefer?</label>
-      <select id="environment">
+      <label for="environment">3. What type of work environment do you prefer?</label>
+      <select id="environment" required>
         <option value="">--Select--</option>
         <option value="office">Office/Corporate</option>
         <option value="remote">Remote/Flexible</option>
@@ -47,8 +49,8 @@
         <option value="school">School/Classroom</option>
       </select>
 
-      <label>4. How do you like solving problems?</label>
-      <select id="problemSolving">
+      <label for="problemSolving">4. How do you like solving problems?</label>
+      <select id="problemSolving" required>
         <option value="">--Select--</option>
         <option value="data">Analyzing data</option>
         <option value="visual">Visually designing things</option>
@@ -57,8 +59,8 @@
         <option value="hands">Using hands or tools</option>
       </select>
 
-      <label>5. What motivates you the most?</label>
-      <select id="motivation">
+      <label for="motivation">5. What motivates you the most?</label>
+      <select id="motivation" required>
         <option value="">--Select--</option>
         <option value="money">Earning potential</option>
         <option value="impact">Helping others</option>
