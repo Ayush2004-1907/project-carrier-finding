@@ -13,7 +13,7 @@
     <div class="toggle-wrapper">
       <h1>Find Your Ideal Career</h1>
       <div class="toggle-links">
-        <button id="darkToggle">🌙 Toggle Dark Mode</button>
+        <button id="darkToggle">🌙</button>
         <a class="link-btn" href="chatbot.html">💬 Career Chatbot</a>
       </div>
     </div>
@@ -74,6 +74,14 @@
 
     <div id="result" class="result-box"></div>
   </div>
+
+  <script>
+    // Dark mode toggle
+    document.getElementById("darkToggle").addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+      this.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  </script>
 
   <script src="script.js"></script>
 </body>
