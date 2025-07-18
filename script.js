@@ -1,9 +1,19 @@
-// DARK MODE TOGGLE
-const toggle = document.getElementById("darkToggle");
-document.getElementById("darkToggle").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+// Wait for the DOM to load before attaching the event
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("darkToggle");
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    // Change button text dynamically
+    if (document.body.classList.contains("dark")) {
+      toggleBtn.innerHTML = "☀️";
+    } else {
+      toggleBtn.innerHTML = "🌙 ";
+    }
+  });
 });
-;
+
 
 // CAREER MATCHING
 document.getElementById("career-form").addEventListener("submit", function(e) {
@@ -101,4 +111,3 @@ document.getElementById("career-form").addEventListener("submit", function (e) {
 
   resultBox.innerHTML = resultHTML;
 });
-
