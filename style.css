@@ -97,6 +97,61 @@ button:hover {
 .link-btn:hover {
   background: #0056b3;
 }
+.chat-preview {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 250px;
+  overflow-y: auto;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.chat-bubble.user {
+  background-color: #007BFF;
+  color: #fff;
+  align-self: flex-end;
+  border-top-right-radius: 0;
+}
+
+.chat-bubble.bot {
+  background-color: #e9f1ff;
+  color: #222;
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .chat-preview {
+    height: 200px;
+  }
+}
+
 .chat-window {
   background: #f9f9f9;
   border: 1px solid #ccc;
