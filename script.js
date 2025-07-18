@@ -1,8 +1,9 @@
 // DARK MODE TOGGLE
 const toggle = document.getElementById("darkToggle");
-toggle.addEventListener("click", () => {
+document.getElementById("darkToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
+;
 
 // CAREER MATCHING
 document.getElementById("career-form").addEventListener("submit", function(e) {
